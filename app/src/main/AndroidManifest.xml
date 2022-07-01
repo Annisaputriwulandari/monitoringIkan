@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bagicode.smartfarm">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartFarm">
+        <activity
+            android:name=".JumlahIkanActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".KeruhActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".KadarPhActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".SuhuAirActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name="onboarding.OnBoardingOneActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name="onboarding.OnBoardingTwoActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name="onboarding.OnBoardingThreeActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name="onboarding.OnBoardingFourActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name="onboarding.SignInActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name="onboarding.SignUpActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
