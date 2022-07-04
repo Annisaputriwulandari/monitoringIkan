@@ -43,6 +43,14 @@
     <string name="jmlh_ikan">JUMLAH IKAN</string>
     <string name="kamera">KAMERA</string>
     <string name="notifikasi">NOTIFIKASI</string>
+    <string name="normalph">5-8</string>
+    <string name="normalsuhu">22°C-30°C</string>
+    <string name="tentang">TENTANG</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="tentangkami">Tentang Kami</string>
+    <string name="digunakanuntuk">Digunakan Untuk</string>
+    <string name="judul">SISTEM MONITORING BUDIDAYA\nIKAN MUJAIR BERBASIS ANDROID\nMENGGUNAKAN RASPBERRY PI</string>
+    <string name="pnj">PROGRAM STUDI TELEKOMUNIKASI\nJURUSAN TEKNIK ELEKTRO\nPOLITEKNIK NEGERI JAKARTA</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

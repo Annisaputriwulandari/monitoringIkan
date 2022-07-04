@@ -72,71 +72,41 @@ class SuhuAirActivity : AppCompatActivity() {
 
             override fun onDataChange(snapshot: DataSnapshot) {
 
-//                if (snapshot.exists()){
-//                    for (i in 0 until 3){
-//                        var suhu = snapshot.child("suhu/1/")
-//                        var tabel = suhu.getValue(tabel::class.java)
-//                        Log.d(TAG, tabel?.waktu.toString())
-//                        var id = resources.getIdentifier("kolom"+(i+1), "id", packageName)
-//                        txt.add(findViewById<View>(id) as TextView)
-//                        txt[i].setText(suhu.value.toString())
-//                    }
-
-//                    Log.d(TAG, snapshot.child("suhu").childrenCount.toString())
-//                    Log.d(TAG, snapshot.child("suhu/1").toString())
-
-//                        var tabel = getdataSnapshot.getValue(tabel::class.java)
-//                        Log.d(TAG, tabel.tiga.toString())
-
-//                        var barisSatu : TableRow = findViewById(R.id.baris_satu)
-//                        Log.d(TAG, tabel?.satu.toString())
-//                        var text : Int = barisSatu.id
-//
-//
-//                        for (i in 0 until 3){
-//                            var id = resources.getIdentifier("kolom"+(i+1), "id", packageName)
-//                            txt.add(findViewById<View>(id) as TextView)
-//                            txt[i].setText(tabel?.1)
-//                        }
-
-//                    val waktuDataSatu = snapshot.child("suhu/1/waktu").value
-//                    waktuTextSatu.text = getDateFromMilliseconds(1656646800640L, "dd/MM/yyyy hh:mm")
-
-                if(snapshot.exists()) {
+                    val waktuDataSatu = snapshot.child("suhu/1/waktu").value
+                    waktuTextSatu.text = getDateFromMilliseconds(1656646800640L, "dd/MM/yyyy hh:mm")
                     val suhuDataSatu = snapshot.child("suhu/1/suhu").value
                     suhuTextSatu.text= suhuDataSatu.toString()
+                    //float suhuTextSatu = (float)ds.child("suhu").getValue();
                     val keteranganDataSatu = snapshot.child("suhu/1/keterangan").value
                     keteranganTextSatu.text= keteranganDataSatu.toString()
 
-//                    val waktuDataDua = snapshot.child("waktu/dua").value
-//                    waktuTextDua.text = getDateFromMilliseconds(1656646440062L, "dd/MM/yyyy hh:mm")
+                    val waktuDataDua = snapshot.child("suhu/2/waktu").value
+                    waktuTextDua.text = getDateFromMilliseconds(1656646440062L, "dd/MM/yyyy hh:mm")
                     val suhuDataDua = snapshot.child("suhu/2/suhu").value
                     suhuTextDua.text= suhuDataDua.toString()
                     val keteranganDataDua = snapshot.child("suhu/2/keterangan").value
                     keteranganTextDua.text= keteranganDataDua.toString()
 
-//                    val waktuDataTiga = snapshot.child("waktu/tiga").value
-//                    waktuTextTiga.text = getDateFromMilliseconds(1656646500574L, "dd/MM/yyyy hh:mm")
+                    val waktuDataTiga = snapshot.child("suhu/3/waktu").value
+                    waktuTextTiga.text = getDateFromMilliseconds(1656646500574L, "dd/MM/yyyy hh:mm")
                     val suhuDataTiga = snapshot.child("suhu/3/suhu").value
                     suhuTextTiga.text= suhuDataTiga.toString()
                     val keteranganDataTiga = snapshot.child("suhu/3/keterangan").value
                     keteranganTextTiga.text= keteranganDataTiga.toString()
 
-//                    val waktuDataEmpat = snapshot.child("waktu/empat").value
-//                    waktuTextEmpat.text = getDateFromMilliseconds(1656644700606L, "dd/MM/yyyy hh:mm")
+                    val waktuDataEmpat = snapshot.child("suhu/4/waktu").value
+                    waktuTextEmpat.text = getDateFromMilliseconds(1656644700606L, "dd/MM/yyyy hh:mm")
                     val suhuDataEmpat = snapshot.child("suhu/4/suhu").value
                     suhuTextEmpat.text= suhuDataEmpat.toString()
                     val keteranganDataEmpat = snapshot.child("suhu/4/keterangan").value
                     keteranganTextEmpat.text= keteranganDataEmpat.toString()
 
-//                    val waktuDataLima = snapshot.child("waktu/lima").value
-//                    waktuTextLima.text = getDateFromMilliseconds(1656644340542L, "dd/MM/yyyy hh:mm")
+                    val waktuDataLima = snapshot.child("suhu/5/waktu").value
+                    waktuTextLima.text = getDateFromMilliseconds(1656644340542L, "dd/MM/yyyy hh:mm")
                     val suhuDataLima = snapshot.child("suhu/5/suhu").value
                     suhuTextLima.text= suhuDataLima.toString()
                     val keteranganDataLima = snapshot.child("suhu/5/keterangan").value
                     keteranganTextLima. text= keteranganDataLima.toString()
-                }
-
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -144,33 +114,19 @@ class SuhuAirActivity : AppCompatActivity() {
             }
         })
 
+        val line_chart: LineChart = findViewById(R.id.line_chart)
 
-        database.addValueEventListener(object: ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-
-                linelist= ArrayList()
-                linelist.add(Entry(10f, 300f))
-                linelist.add(Entry(20f, 400f))
-                linelist.add(Entry(30f, 500f))
-                linelist.add(Entry(40f, 600f))
-                linelist.add(Entry(50f, 700f))
-
-                chartData(linelist)
-            }
-
-            override fun onCancelled(error: DatabaseError) {
-                Log.d(TAG, error.message)
-            }
-
-        })
-    }
-
-    private fun chartData(linelist: ArrayList<Entry>) {
-        lineChart = findViewById(R.id.line_chart)
+        linelist= ArrayList()
+        linelist.add(Entry(5f, 29f))
+        linelist.add(Entry(10f, 30f))
+        linelist.add(Entry(15f, 28f))
+        linelist.add(Entry(20f, 29f))
+        linelist.add(Entry(25f, 25f))
+//        linelist.add(Entry(50f, 0f))
 
         lineDataSet= LineDataSet(linelist, "Count")
         lineData= LineData(lineDataSet)
-        lineChart.data=lineData
+        line_chart.data=lineData
         lineDataSet.color = Color.BLACK
         lineDataSet.setColors(*ColorTemplate.JOYFUL_COLORS)
         lineDataSet.valueTextColor= Color.BLUE
@@ -178,11 +134,15 @@ class SuhuAirActivity : AppCompatActivity() {
         lineDataSet.setDrawFilled(true)
     }
 
+
     private fun getDateFromMilliseconds(millis: Long, dateFormat: String): String {
         val formatter = SimpleDateFormat(dateFormat, Locale.getDefault())
         val calendar = Calendar.getInstance()
 
         calendar.timeInMillis = millis
         return formatter.format(calendar.time)
+    }
+
+    private fun getData(){
     }
 }

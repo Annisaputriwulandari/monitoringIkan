@@ -13,6 +13,9 @@ import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.utils.ColorTemplate
 import com.google.firebase.database.*
+import java.text.SimpleDateFormat
+import java.util.*
+import kotlin.collections.ArrayList
 
 class KadarPhActivity : AppCompatActivity() {
 
@@ -59,38 +62,39 @@ class KadarPhActivity : AppCompatActivity() {
 
         database = FirebaseDatabase.getInstance().getReference("Data")
         database.addValueEventListener(object : ValueEventListener{
+
             override fun onDataChange(snapshot: DataSnapshot){
 
-//                val waktuDataSatu = snapshot.child("ph/1/waktu").value
-//                waktuTextSatu.text = waktuDataSatu.toString()
+                val waktuDataSatu = snapshot.child("ph/1/waktu").value
+                waktuTextSatu.text = getDateFromMilliseconds(1656674100869L, "dd/MM/yyyy hh:mm")
                 val phDataSatu = snapshot.child("ph/1/ph").value
                 phTextSatu.text= phDataSatu.toString()
                 val keteranganDataSatu = snapshot.child("ph/1/keterangan").value
                 keteranganTextSatu.text= keteranganDataSatu.toString()
 
-//                  val waktuDataDua = snapshot.child("waktu/dua").value
-//                  waktuTextDua.text = waktuDataDua.toString()
+                val waktuDataDua = snapshot.child("ph/2/waktu").value
+                waktuTextDua.text = getDateFromMilliseconds(1656674160829L, "dd/MM/yyyy hh:mm")
                 val phDataDua = snapshot.child("ph/2/ph").value
                 phTextDua.text= phDataDua.toString()
                 val keteranganDataDua = snapshot.child("ph/2/keterangan").value
                 keteranganTextDua.text= keteranganDataDua.toString()
 
-//                  val waktuDataTiga = snapshot.child("waktu/tiga").value
-//                  waktuTextTiga.text = waktuDataTiga.toString()
+                val waktuDataTiga = snapshot.child("ph/3/waktu").value
+                waktuTextTiga.text = getDateFromMilliseconds(1656905640033L, "dd/MM/yyyy hh:mm")
                 val phDataTiga = snapshot.child("ph/3/ph").value
                 phTextTiga.text= phDataTiga.toString()
                 val keteranganDataTiga = snapshot.child("ph/3/keterangan").value
                 keteranganTextTiga.text= keteranganDataTiga.toString()
 
-//                  val waktuDataEmpat = snapshot.child("waktu/empat").value
-//                  waktuTextEmpat.text = waktuDataEmpat.toString()
+                val waktuDataEmpat = snapshot.child("ph/4/waktu").value
+                waktuTextEmpat.text = getDateFromMilliseconds(1656008460757L, "dd/MM/yyyy hh:mm")
                 val phDataEmpat = snapshot.child("ph/4/ph").value
                 phTextEmpat.text= phDataEmpat.toString()
                 val keteranganDataEmpat = snapshot.child("ph/4/keterangan").value
                 keteranganTextEmpat.text= keteranganDataEmpat.toString()
 
-//                  val waktuDataLima = snapshot.child("waktu/lima").value
-//                  waktuTextLima.text = waktuDataLima.toString()
+                val waktuDataLima = snapshot.child("ph/5/waktu").value
+                waktuTextLima.text = getDateFromMilliseconds(1656902160088L, "dd/MM/yyyy hh:mm")
                 val phDataLima = snapshot.child("ph/5/ph").value
                 phTextLima.text= phDataLima.toString()
                 val keteranganDataLima = snapshot.child("ph/5/keterangan").value
@@ -121,6 +125,15 @@ class KadarPhActivity : AppCompatActivity() {
         lineDataSet.valueTextSize= 20f
         lineDataSet.setDrawFilled(true)
     }
+
+    private fun getDateFromMilliseconds(millis: Long, dateFormat: String): String {
+        val formatter = SimpleDateFormat(dateFormat, Locale.getDefault())
+        val calendar = Calendar.getInstance()
+
+        calendar.timeInMillis = millis
+        return formatter.format(calendar.time)
+    }
+
     private fun getData(){
     }
 }

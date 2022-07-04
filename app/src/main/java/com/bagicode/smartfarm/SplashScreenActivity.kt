@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.bagicode.smartfarm.buttomnavigation.fragments.HomeFragment
 import onboarding.OnBoardingOneActivity
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -13,11 +14,11 @@ class SplashScreenActivity : AppCompatActivity() {
 
         var handler = Handler()
         handler.postDelayed({
-            var intent = Intent(this@SplashScreenActivity, OnBoardingOneActivity::class.java)
+            var intent = Intent(this@SplashScreenActivity, HomeFragment::class.java)
             startActivity(intent)
             finish()
 
-        }, 200)
+        }, 500)
 
 
     }

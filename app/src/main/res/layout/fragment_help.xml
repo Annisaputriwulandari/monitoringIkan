@@ -18,15 +18,14 @@
         tools:ignore="MissingConstraints">
 
         <TextView
-            android:layout_width="246dp"
-            android:layout_height="wrap_content"
+            android:layout_width="202dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginStart="60dp"
-            android:text="@string/data_kolam"
+            android:text="@string/tentang"
             android:textColor="@color/black"
             android:textSize="32dp"
             android:textStyle="bold" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -37,30 +36,28 @@
     </LinearLayout>
 
     <RelativeLayout
+        android:id="@+id/btn_about"
         android:layout_width="300dp"
         android:layout_height="105dp"
         android:layout_gravity="center_horizontal"
+        android:elevation="10dp"
         android:layout_marginTop="230dp"
         android:background="@drawable/shape_rectangle_colorarmy">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
-            android:text="@string/jenis_ikan"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/tentangkami"
             android:textColor="@color/colorwhite"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
-            android:text="@string/mujair"
-            android:textColor="@color/colorwhite"
-            android:textSize="20sp"
+            android:textSize="28sp"
             android:textStyle="bold" />
 
     </RelativeLayout>
@@ -73,30 +70,28 @@
     </LinearLayout>
 
     <RelativeLayout
+        android:id="@+id/btn_help"
         android:layout_width="300dp"
         android:layout_height="105dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="380dp"
+        android:elevation="10dp"
         android:background="@drawable/shape_rectangle_colorarmy">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
-            android:text="@string/suhu_normal"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="95dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/bantuan"
             android:textColor="@color/colorwhite"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
-            android:text="@string/normalsuhu"
-            android:textColor="@color/colorwhite"
-            android:textSize="20sp"
+            android:textSize="28sp"
             android:textStyle="bold" />
 
     </RelativeLayout>
@@ -108,32 +103,4 @@
         tools:ignore="MissingConstraints">
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="300dp"
-        android:layout_height="105dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="530dp"
-        android:background="@drawable/shape_rectangle_colorarmy">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
-            android:text="@string/ph_normal"
-            android:textColor="@color/colorwhite"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
-            android:text="@string/normalph"
-            android:textColor="@color/colorwhite"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-    </RelativeLayout>
 </FrameLayout>

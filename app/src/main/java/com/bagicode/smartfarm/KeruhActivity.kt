@@ -13,6 +13,9 @@ import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.utils.ColorTemplate
 import com.google.firebase.database.*
+import java.text.SimpleDateFormat
+import java.util.*
+import kotlin.collections.ArrayList
 
 class KeruhActivity : AppCompatActivity() {
 
@@ -61,36 +64,36 @@ class KeruhActivity : AppCompatActivity() {
         database.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot){
 
-//                val waktuDataSatu = snapshot.child("ph/1/waktu").value
-//                waktuTextSatu.text = waktuDataSatu.toString()
+                val waktuDataSatu = snapshot.child("kekeruhan/1/waktu").value
+                waktuTextSatu.text = getDateFromMilliseconds(1656905520192L, "dd/MM/yyyy hh:mm")
                 val keruhDataSatu = snapshot.child("kekeruhan/1/kekeruhan").value
                 keruhTextSatu.text= keruhDataSatu.toString()
                 val keteranganDataSatu = snapshot.child("kekeruhan/1/keterangan").value
                 keteranganTextSatu.text= keteranganDataSatu.toString()
 
-//                  val waktuDataDua = snapshot.child("waktu/dua").value
-//                  waktuTextDua.text = waktuDataDua.toString()
+                val waktuDataDua = snapshot.child("kekeruhan/2/waktu").value
+                waktuTextDua.text = getDateFromMilliseconds(1656905580639L, "dd/MM/yyyy hh:mm")
                 val keruhDataDua = snapshot.child("kekeruhan/2/kekeruhan").value
                 keruhTextDua.text= keruhDataDua.toString()
                 val keteranganDataDua = snapshot.child("kekeruhan/2/keterangan").value
                 keteranganTextDua.text= keteranganDataDua.toString()
 
-//                  val waktuDataTiga = snapshot.child("waktu/tiga").value
-//                  waktuTextTiga.text = waktuDataTiga.toString()
+                val waktuDataTiga = snapshot.child("kekeruhan/3/waktu").value
+                waktuTextTiga.text = getDateFromMilliseconds(1656646500817L, "dd/MM/yyyy hh:mm")
                 val keruhDataTiga = snapshot.child("kekeruhan/3/kekeruhan").value
                 keruhTextTiga.text= keruhDataTiga.toString()
                 val keteranganDataTiga = snapshot.child("kekeruhan/3/keterangan").value
                 keteranganTextTiga.text= keteranganDataTiga.toString()
 
-//                  val waktuDataEmpat = snapshot.child("waktu/empat").value
-//                  waktuTextEmpat.text = waktuDataEmpat.toString()
+                val waktuDataEmpat = snapshot.child("kekeruhan/4/waktu").value
+                waktuTextEmpat.text = getDateFromMilliseconds(1656905700192L, "dd/MM/yyyy hh:mm")
                 val keruhDataEmpat = snapshot.child("kekeruhan/4/kekeruhan").value
                 keruhTextEmpat.text= keruhDataEmpat.toString()
                 val keteranganDataEmpat = snapshot.child("kekeruhan/4/keterangan").value
                 keteranganTextEmpat.text= keteranganDataEmpat.toString()
 
-//                  val waktuDataLima = snapshot.child("waktu/lima").value
-//                  waktuTextLima.text = waktuDataLima.toString()
+                val waktuDataLima = snapshot.child("kekeruhan/5/waktu").value
+                waktuTextLima.text = getDateFromMilliseconds(1656905760576L, "dd/MM/yyyy hh:mm")
                 val keruhDataLima = snapshot.child("kekeruhan/5/kekeruhan").value
                 keruhTextLima.text= keruhDataLima.toString()
                 val keteranganDataLima = snapshot.child("kekeruhan/5/keterangan").value
@@ -121,6 +124,15 @@ class KeruhActivity : AppCompatActivity() {
         lineDataSet.valueTextSize= 20f
         lineDataSet.setDrawFilled(true)
     }
+
+    private fun getDateFromMilliseconds(millis: Long, dateFormat: String): String {
+        val formatter = SimpleDateFormat(dateFormat, Locale.getDefault())
+        val calendar = Calendar.getInstance()
+
+        calendar.timeInMillis = millis
+        return formatter.format(calendar.time)
+    }
+
     private fun getData(){
     }
 }
