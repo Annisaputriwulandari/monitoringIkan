@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="@color/colorwhite"
@@ -28,39 +29,39 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:ignore="MissingConstraints">
-    </LinearLayout>
-
-    <RelativeLayout
+    <Button
         android:id="@+id/btn_about"
-        android:layout_width="300dp"
-        android:layout_height="105dp"
-        android:layout_gravity="center_horizontal"
-        android:elevation="10dp"
+        android:layout_width="270dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="230dp"
-        android:background="@drawable/shape_rectangle_colorarmy">
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/shape_rectangle_colorarmy"
+        android:elevation="30dp"
+        android:text="Tentang Kami"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/colorarmy"
+        android:layout_gravity="center_horizontal"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="60dp"
-            android:layout_marginBottom="30dp"
-            android:text="@string/tentangkami"
-            android:textColor="@color/colorwhite"
-            android:textSize="28sp"
-            android:textStyle="bold" />
-
-    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_help"
+        android:layout_width="270dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/shape_rectangle_colorarmy"
+        app:backgroundTint="@color/colorarmy"
+        android:elevation="30dp"
+        android:text="@string/bantuan"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -68,33 +69,6 @@
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
     </LinearLayout>
-
-    <RelativeLayout
-        android:id="@+id/btn_help"
-        android:layout_width="300dp"
-        android:layout_height="105dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="380dp"
-        android:elevation="10dp"
-        android:background="@drawable/shape_rectangle_colorarmy">
-
-        <TextView
-            android:layout_width="110dp"
-            android:layout_height="45dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="95dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="95dp"
-            android:layout_marginBottom="30dp"
-            android:text="@string/bantuan"
-            android:textColor="@color/colorwhite"
-            android:textSize="28sp"
-            android:textStyle="bold" />
-
-    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

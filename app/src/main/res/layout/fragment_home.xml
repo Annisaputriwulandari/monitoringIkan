@@ -36,7 +36,6 @@
             app:srcCompat="@drawable/logo" />
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,41 +60,37 @@
 
             <RelativeLayout
                 android:id="@+id/btn_suhu"
-                android:layout_width="350dp"
-                android:layout_height="105dp"
+                android:layout_width="330dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/shape_rectangle_colorarmy">
 
                 <TextView
-                    android:layout_width="126dp"
-                    android:layout_height="40dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="67dp"
-                    android:layout_marginTop="36dp"
-                    android:layout_marginEnd="157dp"
-                    android:layout_marginBottom="29dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
                     android:text="@string/suhu_air"
                     android:textColor="@color/colorwhite"
-                    android:textSize="25dp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <ImageView
-                    android:layout_width="91dp"
-                    android:layout_height="91dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="231dp"
-                    android:layout_marginLeft="300dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="280dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="28dp"
-                    android:layout_marginBottom="4dp"
                     android:src="@drawable/suhu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="55dp"
+                    android:text="@string/suhu_desc"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="15sp" />
 
 
             </RelativeLayout>
@@ -112,39 +107,37 @@
 
             <RelativeLayout
                 android:id="@+id/btn_ph"
-                android:layout_width="350dp"
-                android:layout_height="105dp"
+                android:layout_width="330dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/shape_rectangle_colorarmy">
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="43dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="38dp"
-                    android:layout_marginEnd="49dp"
-                    android:layout_marginBottom="24dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
                     android:text="@string/kadar_ph_air"
                     android:textColor="@color/colorwhite"
-                    android:textSize="25sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <ImageView
-                    android:layout_width="82dp"
-                    android:layout_height="85dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="54dp"
-                    android:layout_marginLeft="15dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="25dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="214dp"
-                    android:layout_marginBottom="10dp"
                     android:src="@drawable/ph" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="55dp"
+                    android:text="@string/kadar_desc"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="15sp" />
 
 
             </RelativeLayout>
@@ -161,8 +154,8 @@
 
             <RelativeLayout
                 android:id="@+id/btn_keruh"
-                android:layout_width="350dp"
-                android:layout_height="105dp"
+                android:layout_width="330dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/shape_rectangle_colorarmy">
@@ -170,31 +163,28 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="17dp"
-                    android:layout_marginEnd="125dp"
-                    android:layout_marginBottom="25dp"
-                    android:text="@string/keruh_air"
-                    android:textAlignment="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/kekeruhan_air"
                     android:textColor="@color/colorwhite"
-                    android:textSize="25dp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <ImageView
-                    android:layout_width="77dp"
-                    android:layout_height="80dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="254dp"
-                    android:layout_marginLeft="300dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="280dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="19dp"
-                    android:layout_marginBottom="15dp"
                     android:src="@drawable/water" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="55dp"
+                    android:text="@string/kekeruhan_desc"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="15sp" />
 
             </RelativeLayout>
 
@@ -209,8 +199,8 @@
 
             <RelativeLayout
                 android:id="@+id/btn_jumlah"
-                android:layout_width="350dp"
-                android:layout_height="105dp"
+                android:layout_width="330dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/shape_rectangle_colorarmy">
@@ -218,32 +208,28 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="153dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_marginEnd="58dp"
-                    android:layout_marginBottom="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
                     android:text="@string/jumlah_ikan"
                     android:textColor="@color/colorwhite"
-                    android:textSize="25dp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <ImageView
-                    android:layout_width="73dp"
-                    android:layout_height="78dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="33dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginEnd="243dp"
-                    android:layout_marginBottom="18dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
                     android:src="@drawable/ikan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="55dp"
+                    android:text="@string/jumlah_desc"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="15sp" />
 
 
             </RelativeLayout>

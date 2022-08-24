@@ -12,6 +12,11 @@
         android:title=""/>
 
     <item
+        android:id="@+id/history"
+        android:icon="@drawable/history"
+        android:title=""/>
+
+    <item
         android:id="@+id/account"
         android:icon="@drawable/account"
         android:title="" />

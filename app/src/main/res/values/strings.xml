@@ -47,10 +47,96 @@
     <string name="normalsuhu">22°C-30°C</string>
     <string name="tentang">TENTANG</string>
     <string name="bantuan">Bantuan</string>
-    <string name="tentangkami">Tentang Kami</string>
+    <string name="tentangkami">Tentang\nKami</string>
+    <string name="about">Tentang Kami</string>
     <string name="digunakanuntuk">Digunakan Untuk</string>
     <string name="judul">SISTEM MONITORING BUDIDAYA\nIKAN MUJAIR BERBASIS ANDROID\nMENGGUNAKAN RASPBERRY PI</string>
     <string name="pnj">PROGRAM STUDI TELEKOMUNIKASI\nJURUSAN TEKNIK ELEKTRO\nPOLITEKNIK NEGERI JAKARTA</string>
+
+    <!--waktu_riw-->
+    <string name="wkt_riw1">10 Agustus 2022 12.45</string>
+    <string name="wkt_riw2">10 Agustus 2022 12.46</string>
+    <string name="wkt_riw3">10 Agustus 2022 12.47</string>
+    <string name="wkt_riw4">10 Agustus 2022 12.48</string>
+    <string name="wkt_riw5">10 Agustus 2022 12.49</string>
+    <string name="wkt_riw6">10 Agustus 2022 12.50</string>
+    <string name="wkt_riw7">10 Agustus 2022 12.51</string>
+    <string name="wkt_riw8">10 Agustus 2022 12.52</string>
+    <string name="wkt_riw9">10 Agustus 2022 12.53</string>
+    <string name="wkt_riw10">10 Agustus 2022 12.54</string>
+
+    <!--suhu_riw-->
+    <string name="sh_riw1">25.6°C</string>
+    <string name="sh_riw2">25.9°C</string>
+    <string name="sh_riw3">24.3°C</string>
+    <string name="sh_riw4">26.9°C</string>
+    <string name="sh_riw5">25.6°C</string>
+    <string name="sh_riw6">25.6°C</string>
+    <string name="sh_riw7">26.5°C</string>
+    <string name="sh_riw8">26.5°C</string>
+    <string name="sh_riw9">26.5°C</string>
+    <string name="sh_riw10">26.5°C</string>
+
+    <!--ketsuhu_riw-->
+    <string name="ketsh_riw1">Sesuai</string>
+    <string name="ketsh_riw2">Sesuai</string>
+    <string name="ketsh_riw3">Sesuai</string>
+    <string name="ketsh_riw4">Sesuai</string>
+    <string name="ketsh_riw5">Sesuai</string>
+    <string name="ketsh_riw6">Sesuai</string>
+    <string name="ketsh_riw7">Sesuai</string>
+    <string name="ketsh_riw8">Sesuai</string>
+    <string name="ketsh_riw9">Sesuai</string>
+    <string name="ketsh_riw10">Sesuai</string>
+
+    <!--ph_riw-->
+    <string name="ph_riw1">7.8</string>
+    <string name="ph_riw2">7.8</string>
+    <string name="ph_riw3">7.8</string>
+    <string name="ph_riw4">6.8</string>
+    <string name="ph_riw5">8.8</string>
+    <string name="ph_riw6">8.8</string>
+    <string name="ph_riw7">8.8</string>
+    <string name="ph_riw8">8.8</string>
+    <string name="ph_riw9">8.4</string>
+    <string name="ph_riw10">8.4</string>
+
+    <!--ketph_riw-->
+    <string name="ketph_riw1">Netral</string>
+    <string name="ketph_riw3">Netral</string>
+    <string name="ketph_riw2">Netral</string>
+    <string name="ketph_riw4">Netral</string>
+    <string name="ketph_riw5">Netral</string>
+    <string name="ketph_riw6">Netral</string>
+    <string name="ketph_riw7">Netral</string>
+    <string name="ketph_riw8">Netral</string>
+    <string name="ketph_riw9">Netral</string>
+    <string name="ketph_riw10">Netral</string>
+
+    <!--keruh_riw-->
+    <string name="krh_riw1">82.7</string>
+    <string name="krh_riw2">82.7</string>
+    <string name="krh_riw3">82.7</string>
+    <string name="krh_riw4">81.9</string>
+    <string name="krh_riw5">81.9</string>
+    <string name="krh_riw6">81.9</string>
+    <string name="krh_riw7">81.9</string>
+    <string name="krh_riw8">78.7</string>
+    <string name="krh_riw9">78.7</string>
+    <string name="krh_riw10">78.7</string>
+
+    <!--ketkeruh_riw-->
+    <string name="ketkrh_riw1">Air Bersih</string>
+    <string name="ketkrh_riw2">Air Bersih</string>
+    <string name="ketkrh_riw3">Air Bersih</string>
+    <string name="ketkrh_riw4">Air Bersih</string>
+    <string name="ketkrh_riw5">Air Bersih</string>
+    <string name="ketkrh_riw6">Air Bersih</string>
+    <string name="ketkrh_riw7">Air Bersih</string>
+    <string name="ketkrh_riw8">Air Bersih</string>
+    <string name="ketkrh_riw9">Air Bersih</string>
+    <string name="ketkrh_riw10">Air Bersih</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -20,27 +20,30 @@ class HomeFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-
+        //membuat id untuk RelativeLayout. id didapat dari layout xml
         val btnSuhu : RelativeLayout = requireView().findViewById(R.id.btn_suhu)
-
+        //melakukan perpindahan ke halaman utama ketika di klik
         btnSuhu.setOnClickListener {
             val intent = Intent (requireContext(), SuhuAirActivity::class.java)
             startActivity(intent)
         }
+        //membuat id untuk RelativeLayout. id didapat dari layout xml
         val btnPh : RelativeLayout = view?.findViewById(R.id.btn_ph)!!
-
+        //melakukan perpindahan ke halaman utama ketika di klik
         btnPh.setOnClickListener {
             val intent = Intent (requireContext(), KadarPhActivity::class.java)
             startActivity(intent)
         }
+        //membuat id untuk RelativeLayout. id didapat dari layout xml
         val btnKeruh : RelativeLayout = view?.findViewById(R.id.btn_keruh)!!
-
+        //melakukan perpindahan ke halaman utama ketika di klik
         btnKeruh.setOnClickListener {
             val intent = Intent (requireContext(), KeruhActivity::class.java)
             startActivity(intent)
         }
+        //membuat id untuk RelativeLayout. id didapat dari layout xml
         val btnJumlah : RelativeLayout = view?.findViewById(R.id.btn_jumlah)!!
-
+        //melakukan perpindahan ke halaman utama ketika di klik
         btnJumlah.setOnClickListener {
             val intent = Intent (requireContext(), JumlahIkanActivity::class.java)
             startActivity(intent)

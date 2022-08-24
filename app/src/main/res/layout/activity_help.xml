@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:backgroundTint="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        android:backgroundTint="@color/colorblue"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingVertical="25dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/btn_back_help"
+            android:layout_width="3dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-40dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-25dp"
+            android:text="@string/bantuan"
+            android:textColor="@color/black"
+            android:textSize="34dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="106dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/help" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="502dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/background"
+        android:backgroundTint="@color/colorwhite"
+        android:elevation="30dp"
+        android:orientation="horizontal"
+        android:paddingVertical="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="117dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="-20dp"
+            app:srcCompat="@drawable/suhuairtmbl" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:text="Tombol ini berfungsi untuk menampilkan halaman
+                          monitoring suhu air kolam"
+            android:textStyle="normal"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-358dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/phairtmbl" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="60dp"
+            android:text="Tombol ini berfungsi untuk menampilkan halaman
+                          monitoring kadar pH air kolam"
+            android:textStyle="normal"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-358dp"
+            android:layout_marginTop="125dp"
+            app:srcCompat="@drawable/keruhtmbl" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="135dp"
+            android:text="Tombol ini berfungsi untuk menampilkan halaman
+                          monitoring tingkat kekeruhan air kolam"
+            android:textStyle="normal"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="163dp"
+            android:layout_height="94dp"
+            android:layout_marginLeft="-355dp"
+            android:layout_marginTop="195dp"
+            app:srcCompat="@drawable/jumlahikantmbl" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="210dp"
+            android:text="Tombol ini berfungsi untuk menampilkan halaman
+                          monitoring jumlah ikan pada kolam"
+            android:textStyle="normal"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-350dp"
+            android:layout_marginTop="290dp"
+            app:srcCompat="@drawable/akuntombol" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="290dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:text="Tombol ini berfungsi untuk menampilkan halaman data kolam"/>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-350dp"
+            android:layout_marginTop="345dp"
+            app:srcCompat="@drawable/helptombol" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="345dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:text="Tombol ini berfungsi untuk menampilkan halaman bantuan yang berisi tentang kami
+                          dan bantuan mengenai aplikasi"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+

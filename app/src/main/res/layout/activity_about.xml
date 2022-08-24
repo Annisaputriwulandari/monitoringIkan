@@ -15,25 +15,37 @@
         android:background="@drawable/header"
         android:backgroundTint="@color/colorblue"
         android:orientation="horizontal"
-        android:gravity="center"
         android:paddingVertical="25dp"
         tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/btn_back_about"
+            android:layout_width="3dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            app:srcCompat="@drawable/back" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="45dp"
-            android:text="@string/bantuan"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/tentangkami"
             android:textColor="@color/black"
-            android:textSize="40sp"
+            android:textSize="32dp"
             android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="130dp"
-            android:layout_marginStart="50dp"
+            android:layout_width="130dp"
+            android:layout_height="106dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/help" />
+            app:srcCompat="@drawable/team" />
+
     </LinearLayout>
 
 
@@ -60,134 +72,206 @@
             tools:ignore="MissingConstraints">
 
             <RelativeLayout
-                android:id="@+id/btn_suhu"
                 android:layout_width="350dp"
-                android:layout_height="105dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
                 android:background="@drawable/shape_rectangle_colorarmy">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="15dp"
-                    android:text="@string/suhu_air"
-                    android:textColor="@color/colorwhite"
-                    android:textSize="20sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="Rancang Bangun Sistem Monitoring Budidaya
+                                    Ikan Mujair Berbasis Aplikasi Android Menggunakan Raspberry Pi"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
                     android:textStyle="bold" />
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="300dp"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/suhu" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="55dp"
-                    android:text="@string/suhu_desc"
-                    android:textColor="@color/colorwhite"
-                    android:textSize="15sp" />
-
-
             </RelativeLayout>
-
-
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:orientation="vertical"
             tools:ignore="MissingConstraints">
 
             <RelativeLayout
-                android:id="@+id/btn_ph"
                 android:layout_width="350dp"
-                android:layout_height="105dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/shape_rectangle_colorarmy">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="15dp"
-                    android:text="@string/kadar_ph_air"
-                    android:textColor="@color/colorwhite"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/ph" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="55dp"
-                    android:text="@string/kadar_desc"
-                    android:textColor="@color/colorwhite"
-                    android:textSize="15sp" />
-
-
-            </RelativeLayout>
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="vertical"
-            tools:ignore="MissingConstraints">
-
-            <RelativeLayout
-                android:id="@+id/btn_keruh"
-                android:layout_width="350dp"
-                android:layout_height="105dp"
+                android:layout_height="240dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/shape_rectangle_colorarmy">
 
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="231dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="28dp"
+                    android:src="@drawable/fotokevin" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="15dp"
-                    android:text="@string/kekeruhan_air"
-                    android:textColor="@color/colorwhite"
-                    android:textSize="20sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="72dp"
+                    android:layout_marginBottom="221dp"
+                    android:text="KEVIN RIZKY DANIEL"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="59dp"
+                    android:layout_marginBottom="179dp"
+                    android:text="NIM : 1903332081"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
                     android:textStyle="bold" />
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="300dp"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/water" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="142dp"
+                    android:text="Prodi : Telekomunikasi"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="55dp"
-                    android:text="@string/kekeruhan_desc"
-                    android:textColor="@color/colorwhite"
-                    android:textSize="15sp" />
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="107dp"
+                    android:text="Jurusan : Teknik Elektro"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="70dp"
+                    android:text="Politeknik Negeri Jakarta"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
 
             </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="-10dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_rectangle_colorarmy">
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="231dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="28dp"
+                    android:src="@drawable/fotopw" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="47dp"
+                    android:layout_marginBottom="219dp"
+                    android:text="ANNISA PUTRI WULANDARI"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="59dp"
+                    android:layout_marginBottom="179dp"
+                    android:text="NIM : 1903332014"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="29dp"
+                    android:layout_marginBottom="140dp"
+                    android:text="Prodi : Telekomunikasi"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="106dp"
+                    android:text="Jurusan : Teknik Elektro"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="70dp"
+                    android:text="Politeknik Negeri Jakarta"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+
+            </RelativeLayout>
+
 
         </LinearLayout>
 
@@ -196,46 +280,14 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:orientation="vertical"
-            tools:ignore="MissingConstraints">
+            tools:ignore="MissingConstraints"/>
 
-            <RelativeLayout
-                android:id="@+id/btn_jumlah"
-                android:layout_width="350dp"
-                android:layout_height="105dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/shape_rectangle_colorarmy">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="15dp"
-                    android:text="@string/jumlah_ikan"
-                    android:textColor="@color/colorwhite"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/ikan" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="55dp"
-                    android:text="@string/jumlah_desc"
-                    android:textColor="@color/colorwhite"
-                    android:textSize="15sp" />
-
-
-            </RelativeLayout>
-
-        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"/>
 
     </LinearLayout>
 

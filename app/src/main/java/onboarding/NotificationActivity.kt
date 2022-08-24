@@ -23,7 +23,7 @@ class NotificationActivity(val context: Context) : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_on_boarding_four)
+        setContentView(R.layout.activity_home)
 
         createNotifChannel()
 

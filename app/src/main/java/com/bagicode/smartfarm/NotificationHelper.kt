@@ -19,7 +19,7 @@ class NotificationHelper(val context: Context) {
     val CHANNEL_ID = "channelID"
     val CHANNEL_NAME = "channelName"
     val NOTIF_ID = 0
-
+//membuat channel notifikasi pada android
     private fun createNotificationChannel() {
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel  = NotificationChannel(CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_DEFAULT).apply {
@@ -30,18 +30,18 @@ class NotificationHelper(val context: Context) {
             manager.createNotificationChannel(channel)
         }
     }
-
-    fun createNotification() {
+//membuat fitur / tampilan notifikasi
+    fun createNotification(title: String, desc: String) {
         createNotificationChannel()
         val intent = Intent(context, HomeActivity::class.java).apply {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         }
 
-        val pendingIntent: PendingIntent = PendingIntent.getActivity(context, 0, intent, 0)
+        val pendingIntent: PendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_IMMUTABLE)
 
         val notif = NotificationCompat.Builder(context, CHANNEL_ID)
-            .setContentTitle("Sample Title")
-            .setContentText("context is Sample Body Notif")
+            .setContentTitle(title)
+            .setContentText(desc)
             .setSmallIcon(R.drawable.ic_baseline_arrow_back_24)
             .setPriority(NotificationCompat.PRIORITY_HIGH)
             .setContentIntent(pendingIntent)
